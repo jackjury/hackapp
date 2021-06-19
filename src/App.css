@@ -21,6 +21,13 @@ body {
 
 p {
   font-size: 1.5rem;
+  text-shadow: 1px 1px black;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 .gameChoice,
@@ -43,6 +50,11 @@ button {
     align-items: center;
     justify-content: space-evenly;
   }
+
+  /* .bigWelcomeImage {
+    width: 90vw !important;
+    height: auto !important;
+  } */
 }
 
 .welcome-button,
@@ -145,7 +157,7 @@ button {
 
 .game-header {
   color: #fff;
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: bold;
   background-color: #f9891983;
   width: 66%;
