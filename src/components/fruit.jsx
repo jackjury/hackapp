@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Answers from "./answers";
+import Answers from "./Answers";
 
 class Fruit extends Component {
   state = {
@@ -27,7 +27,7 @@ class Fruit extends Component {
     return (
       <>
         <img src="../images/fruit/apple.png" alt="apple" />
-        <Answers data={["apple", "carrot", "dog", "car"]} />
+        <Answers answers={["apple", "carrot", "dog", "car"]} />
       </>
     );
   }
