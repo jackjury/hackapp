@@ -5,13 +5,14 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Error from "./components/error";
 import WelcomeScreen from "./components/welcomeScreen";
 import ImageGameHomePage from "./components/imageGame";
-import Main from "./components/main";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Main />
+        <Route path="/image-game" component={Header} />
+
         <Switch>
           <Route exact path="/" component={WelcomeScreen} />
           <Route exact path="/image-game" component={ImageGameHomePage} />
