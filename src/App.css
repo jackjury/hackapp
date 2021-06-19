@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -16,4 +15,32 @@
 
 body {
   background-color: #f2d355;
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.gameChoice,
+.buttonContainer,
+button {
+  margin: 1rem;
+}
+
+.gameChoiceContainerFirst,
+.gameChoiceContainerSecond {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+@media (min-width: 700px) {
+  .gameChoiceContainerFirst,
+  .gameChoiceContainerSecond {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
