@@ -9,7 +9,7 @@ class AnswerButtons extends Component {
   render() {
     return (
       <div className="container">
-        <button>{this.props.answer[0]}</button>
+        <button onClick={this.props.increaseTurn} >{this.props.answer[0]}</button>
         <button>{this.props.answer[1]}</button>
         <button>{this.props.answer[2]}</button>
         <button>{this.props.answer[3]}</button>
