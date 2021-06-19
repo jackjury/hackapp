@@ -7,6 +7,8 @@ import ImageGameHomePage from "./components/ImageGameHomePage";
 import Header from "./components/Header";
 import Test from "./components/test";
 import Fruit from "./components/fruit";
+import Animal from "./components/animals";
+
 // import Music from "./components/Music";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route exact path="/image-game" component={ImageGameHomePage} />
           <Route exact path="/error" component={Error} />
           <Route exact path="/image-game/fruit" component={Fruit} />
+          <Route exact path="/image-game/animals" component={Animal} />
+
           <Redirect to="/error" />
         </Switch>
       </BrowserRouter>
