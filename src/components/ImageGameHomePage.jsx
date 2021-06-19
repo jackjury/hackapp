@@ -11,17 +11,17 @@ class ImageGameHomePage extends Component {
   render() {
     return (
       <div>
-        <p>Choose Your Game!</p>
+        <h1 className="game-header">Choose Your Game!</h1>
         <div className="gameChoiceContainerFirst">
           <div className="gameChoice">
             <Link to="/image-game/fruit">
-              <p>Fruit</p>
+              <p className="game-titles">Fruit</p>
               <img height="200px" src={AppleImage} alt="" />
             </Link>
           </div>
           <div className="gameChoice">
             <Link to="/image-game/colours">
-              <p>Colours</p>
+              <p className="game-titles">Colours</p>
               <img height="200px" src={BlueImage} alt="" />
             </Link>
           </div>
@@ -29,13 +29,13 @@ class ImageGameHomePage extends Component {
         <div className="gameChoiceContainerSecond">
           <div className="gameChoice">
             <Link to="/image-game/animals">
-              <p>Animals</p>
+              <p className="game-titles">Animals</p>
               <img height="200px" src={PandaImage} alt="" />
             </Link>
           </div>
           <div className="gameChoice">
             <Link to="/image-game/weather">
-              <p>Weather</p>
+              <p className="game-titles">Weather</p>
               <img height="200px" src={CloudImage} alt="" />
             </Link>
           </div>
