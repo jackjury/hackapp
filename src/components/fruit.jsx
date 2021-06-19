@@ -18,9 +18,8 @@ class Fruit extends Component {
     console.log("button press");
     console.log(this.state.turn);
     console.log(this.state.game.length);
-    if (this.state.turn + 1 < this.state.game.length) {
-      this.setState({ turn: this.state.turn + 1 });
-    }
+
+    this.setState({ turn: this.state.turn + 1 });
   };
 
   state = {
@@ -51,21 +50,25 @@ class Fruit extends Component {
   render() {
     // console.log(this.state.game[this.state.turn].answers)
     // console.log(this.state.game[this.state.turn].image)
-    return (
-      <>
-        <img
-          height="200px"
-          src={this.state.game[this.state.turn].image}
-          alt="apple"
-        />
 
-        <Answers
-          increaseTurn={this.increaseTurn}
-          try={this.try}
-          answer={this.state.game[this.state.turn].answers}
-        />
-      </>
-    );
+    if (this.state.turn > this.state.game.length) {
+      // Render Success
+    } else {
+      return (
+        <>
+          <img
+            height="200px"
+            src={this.state.game[this.state.turn].image}
+            alt="apple"
+          />
+
+          <Answers
+            try={this.try}
+            answer={this.state.game[this.state.turn].answers}
+          />
+        </>
+      );
+    }
   }
 }
 
