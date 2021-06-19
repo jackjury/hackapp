@@ -7,6 +7,7 @@ import ImageGameHomePage from "./components/ImageGameHomePage";
 import Header from "./components/Header";
 import Test from "./components/test";
 import Fruit from "./components/fruit";
+// import Music from "./components/Music";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Redirect to="/error" />
         </Switch>
       </BrowserRouter>
+      {/* <Music /> */}
     </div>
   );
 }

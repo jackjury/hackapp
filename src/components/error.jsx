@@ -9,7 +9,7 @@ class Error extends Component {
       <div>
         <img src={lion} alt="Lion" />
         <h1>Oh no! You've gone off the path. Let's go back home.</h1>
-        <Link to="/"> Home </Link>
+        <button><Link to="/"> Home </Link></button>
       </div>
     );
   }
