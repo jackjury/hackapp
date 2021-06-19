@@ -57,23 +57,38 @@ button {
   transition-duration: 0.4s;
 }
 
-.welcome-button:hover {
+.welcome-button:hover,
+.back-button:hover {
   background-color: #60a101;
   color: white;
 }
 
-.welcome-button a {
+.welcome-button a,
+.back-button a {
   color: white;
   text-decoration: none;
 }
 
-.typewriter h1 {
+.back-button {
+  width: 150px;
+  height: 40px;
+  margin: 25px 10px 10px;
+  border-radius: 10px;
+  background-color: #f98a19;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+.typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 6s steps(40, end);
+  font-size: 50px;
 }
 
 /* The typing effect */
@@ -86,13 +101,20 @@ button {
   }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -40px;
+}
+
+.cub-logo {
+  width: 130px;
+  height: auto;
+  position: relative;
+  top: -11px;
+}
+
+.bigWelcomeImage {
+  width: auto;
+  height: 80vh;
 }

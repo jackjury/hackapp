@@ -7,9 +7,11 @@ class Error extends Component {
   render() {
     return (
       <div>
-        <img src={lion} alt="Lion" />
+        <img className="bigWelcomeImage" src={lion} alt="Lion" />
         <h1>Oh no! You've gone off the path. Let's go back home.</h1>
-        <button><Link to="/"> Home </Link></button>
+        <button>
+          <Link to="/"> Home </Link>
+        </button>
       </div>
     );
   }
