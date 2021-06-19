@@ -4,6 +4,7 @@ import AppleImage from "../images/fruit/apple.png";
 import BananaImage from "../images/fruit/banana.png";
 import CherryImage from "../images/fruit/cherry.png";
 import StrawberryImage from "../images/fruit/strawberry.png";
+import SuccessPage from "./successPage";
 
 class Fruit extends Component {
   try = (boolean) => {
@@ -48,11 +49,10 @@ class Fruit extends Component {
     ],
   };
   render() {
-    // console.log(this.state.game[this.state.turn].answers)
-    // console.log(this.state.game[this.state.turn].image)
-
-    if (this.state.turn > this.state.game.length) {
+    if (this.state.turn + 1 > this.state.game.length) {
       // Render Success
+
+      return <SuccessPage />;
     } else {
       return (
         <>
