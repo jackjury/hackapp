@@ -7,14 +7,49 @@ import React, { Component } from "react";
 
 class AnswerButtons extends Component {
   render() {
+    let arr = [];
+    this.props.answer.forEach((answer, index) => {
+      if (index === 0) {
+        let output = [answer, true];
+        arr.push(output);
+      } else {
+        let output = [answer, false];
+        arr.push(output);
+      }
+    });
+    arr = shuffle(arr);
+    console.log(arr);
+
     return (
       <div className="container">
-        <button onClick={this.props.increaseTurn} >{this.props.answer[0]}</button>
-        <button>{this.props.answer[1]}</button>
-        <button>{this.props.answer[2]}</button>
-        <button>{this.props.answer[3]}</button>
+        {arr.map((item) => {
+          return (
+            <button onClick={() => this.props.try(item[1])}>{item[0]}</button>
+          );
+        })}
       </div>
     );
   }
 }
+
+function shuffle(array) {
+  var currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+}
+
 export default AnswerButtons;
