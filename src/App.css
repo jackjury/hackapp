@@ -15,9 +15,38 @@
 
 body {
   background-color: #f2d355;
+  margin: auto;
+  text-align: center;
 }
 
-.welcome-button, .error-button {
+p {
+  font-size: 1.5rem;
+}
+
+.gameChoice,
+.buttonContainer,
+button {
+  margin: 1rem;
+}
+
+.gameChoiceContainerFirst,
+.gameChoiceContainerSecond {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+@media (min-width: 700px) {
+  .gameChoiceContainerFirst,
+  .gameChoiceContainerSecond {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.welcome-button,
+.error-button {
   width: 400px;
   height: 100px;
   margin: 10px;
@@ -30,13 +59,15 @@ body {
 }
 
 .welcome-button:hover,
-.back-button:hover, .error-button:hover {
+.back-button:hover,
+.error-button:hover {
   background-color: #60a101;
   color: white;
 }
 
 .welcome-button a,
-.back-button a, .error-button a{
+.back-button a,
+.error-button a {
   color: white;
   text-decoration: none;
 }
@@ -86,7 +117,10 @@ body {
   top: -11px;
 }
 
-
-.error-text{
+.error-text {
   color: #fff;
+}
+.bigWelcomeImage {
+  width: auto;
+  height: 80vh;
 }

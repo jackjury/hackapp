@@ -8,11 +8,19 @@ import React, { Component } from "react";
 class AnswerButtons extends Component {
   render() {
     return (
-      <div className="container">
-        <button onClick={this.props.increaseTurn} >{this.props.answer[0]}</button>
-        <button>{this.props.answer[1]}</button>
-        <button>{this.props.answer[2]}</button>
-        <button>{this.props.answer[3]}</button>
+      <div className="buttonContainer">
+        <button type="button" class="btn btn-primary">
+          {this.props.answer[0]}
+        </button>
+        <button type="button" class="btn btn-secondary">
+          {this.props.answer[1]}
+        </button>
+        <button type="button" class="btn btn-info">
+          {this.props.answer[2]}
+        </button>
+        <button type="button" class="btn btn-light">
+          {this.props.answer[3]}
+        </button>
       </div>
     );
   }
