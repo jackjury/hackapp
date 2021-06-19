@@ -1,23 +1,23 @@
-import React, { Component } from "react";
-import Answers from "./answers";
-import DogImage from "../images/animal/dog.png";
-import CatImage from "../images/animal/cat.png";
-import LionImage from "../images/animal/lion.png";
-import PenguinImage from "../images/animal/penguin.png";
+import React, { Component } from 'react';
+import Answers from './answers';
+import DogImage from '../images/animal/dog.png';
+import CatImage from '../images/animal/cat.png';
+import LionImage from '../images/animal/lion.png';
+import PenguinImage from '../images/animal/penguin.png';
 
-import SuccessPage from "./successPage";
+import SuccessPage from './successPage';
 
 class Fruit extends Component {
   try = (boolean) => {
     if (boolean) {
       this.increaseTurn();
     } else {
-      alert("Wrong!");
+      alert('Wrong!');
     }
   };
 
   increaseTurn = () => {
-    console.log("button press");
+    console.log('button press');
     console.log(this.state.turn);
     console.log(this.state.game.length);
 
@@ -28,23 +28,23 @@ class Fruit extends Component {
     turn: 0,
     game: [
       {
-        name: "dog",
-        answers: ["dog", "frog", "table", "lamp"],
+        name: 'dog',
+        answers: ['dog', 'frog', 'table', 'lamp'],
         image: DogImage,
       },
       {
-        name: "cat",
-        answers: ["cat", "bear", "cow", "mouse"],
+        name: 'cat',
+        answers: ['cat', 'bear', 'cow', 'mouse'],
         image: CatImage,
       },
       {
-        name: "lion",
-        answers: ["lion", "egg", "apple", "hat"],
+        name: 'lion',
+        answers: ['lion', 'egg', 'apple', 'hat'],
         image: LionImage,
       },
       {
-        name: "penguin",
-        answers: ["penguin", "sun", "spoon", "lobster"],
+        name: 'penguin',
+        answers: ['penguin', 'sun', 'spoon', 'lobster'],
         image: PenguinImage,
       },
     ],
@@ -56,7 +56,7 @@ class Fruit extends Component {
       return <SuccessPage />;
     } else {
       return (
-        <>
+        <div className="question-box">
           <img
             height="200px"
             src={this.state.game[this.state.turn].image}
@@ -67,7 +67,7 @@ class Fruit extends Component {
             try={this.try}
             answer={this.state.game[this.state.turn].answers}
           />
-        </>
+        </div>
       );
     }
   }

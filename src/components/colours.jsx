@@ -1,22 +1,22 @@
-import React, { Component } from "react";
-import Answers from "./answers";
-import BlueImage from "../images/colours/blue.png";
-import RedImage from "../images/colours/red.png";
-import GreenImage from "../images/colours/green.png";
-import OrangeImage from "../images/colours/orange.png";
-import SuccessPage from "./successPage";
+import React, { Component } from 'react';
+import Answers from './answers';
+import BlueImage from '../images/colours/blue.png';
+import RedImage from '../images/colours/red.png';
+import GreenImage from '../images/colours/green.png';
+import OrangeImage from '../images/colours/orange.png';
+import SuccessPage from './successPage';
 
 class Colours extends Component {
   try = (boolean) => {
     if (boolean) {
       this.increaseTurn();
     } else {
-      alert("Wrong!");
+      alert('Wrong!');
     }
   };
 
   increaseTurn = () => {
-    console.log("button press");
+    console.log('button press');
     console.log(this.state.turn);
     console.log(this.state.game.length);
 
@@ -27,23 +27,23 @@ class Colours extends Component {
     turn: 0,
     game: [
       {
-        name: "blue",
-        answers: ["blue", "orange", "red", "pink"],
+        name: 'blue',
+        answers: ['blue', 'orange', 'red', 'pink'],
         image: BlueImage,
       },
       {
-        name: "green",
-        answers: ["green", "white", "black", "blue"],
+        name: 'green',
+        answers: ['green', 'white', 'black', 'blue'],
         image: GreenImage,
       },
       {
-        name: "orange",
-        answers: ["orange", "yellow", "brown", "red"],
+        name: 'orange',
+        answers: ['orange', 'yellow', 'brown', 'red'],
         image: OrangeImage,
       },
       {
-        name: "red",
-        answers: ["red", "brown", "purple", "grey"],
+        name: 'red',
+        answers: ['red', 'brown', 'purple', 'grey'],
         image: RedImage,
       },
     ],
@@ -55,7 +55,7 @@ class Colours extends Component {
       return <SuccessPage />;
     } else {
       return (
-        <>
+        <div className="question-box">
           <img
             height="200px"
             src={this.state.game[this.state.turn].image}
@@ -66,7 +66,7 @@ class Colours extends Component {
             try={this.try}
             answer={this.state.game[this.state.turn].answers}
           />
-        </>
+        </div>
       );
     }
   }
