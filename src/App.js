@@ -8,7 +8,6 @@ import Main from "./components/Main";
 import Test from "./components/Test";
 import Fruit from "./components/Fruit";
 
-
 function App() {
   return (
     <div className="App">
