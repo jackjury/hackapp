@@ -1,12 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import Error from "./components/Error";
+import Error from "./components/error";
 import WelcomeScreen from "./components/WelcomeScreen";
 import ImageGameHomePage from "./components/ImageGameHomePage";
 import Header from "./components/Header";
-import Test from "./components/Test";
-import Fruit from "./components/Fruit";
+import Test from "./components/test";
+import Fruit from "./components/fruit";
 
 function App() {
   return (

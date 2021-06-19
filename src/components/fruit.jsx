@@ -1,33 +1,34 @@
-import React, { Component } from "react";
-import Answers from "./Answers";
+import React, { Component } from 'react';
+import Answers from './answers';
+import AppleImage from '../images/fruit/apple.png';
 
 class Fruit extends Component {
   state = {
     turn: 0,
     game: [
       {
-        name: "apple",
-        answers: ["apple", "carrot", "dog", "car"],
+        name: 'apple',
+        answers: ['apple', 'carrot', 'dog', 'car'],
       },
       {
-        name: "banana",
-        answers: ["banana", "spade", "ghost", "ball"],
+        name: 'banana',
+        answers: ['banana', 'spade', 'ghost', 'ball'],
       },
       {
-        name: "cherry",
-        answers: ["cherry", "camera", "oven", "cup"],
+        name: 'cherry',
+        answers: ['cherry', 'camera', 'oven', 'cup'],
       },
       {
-        name: "strawberry",
-        answers: ["strawberry", "sausage", "hat", "fox"],
+        name: 'strawberry',
+        answers: ['strawberry', 'sausage', 'hat', 'fox'],
       },
     ],
   };
   render() {
     return (
       <>
-        <img src="../images/fruit/apple.png" alt="apple" />
-        <Answers answers={["apple", "carrot", "dog", "car"]} />
+        <img height="200px" src={AppleImage} alt="apple" />
+        <Answers answer={['apple', 'carrot', 'dog', 'car']} />
       </>
     );
   }
