@@ -55,7 +55,7 @@ class Fruit extends Component {
       return <SuccessPage />;
     } else {
       return (
-        <>
+        <div className="question-box">
           <img
             height="200px"
             src={this.state.game[this.state.turn].image}
@@ -66,7 +66,7 @@ class Fruit extends Component {
             try={this.try}
             answer={this.state.game[this.state.turn].answers}
           />
-        </>
+        </div>
       );
     }
   }

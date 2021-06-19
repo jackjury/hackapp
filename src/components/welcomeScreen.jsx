@@ -12,6 +12,7 @@ class WelcomeScreen extends Component {
         <button className="welcome-button">
           <Link to="/image-game">Lets Start!</Link>
         </button>
+        <p className="copyright">Copyright Lions Inc. 2021</p>
       </div>
     );
   }

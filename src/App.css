@@ -125,14 +125,14 @@ button {
   height: 80vh;
 }
 
-.gameChoice{
+.gameChoice {
   background-color: #f9891983;
   width: 350px;
   height: 300px;
   border-radius: 10px;
 }
 
-.gameChoice:hover{
+.gameChoice:hover {
   background-color: #60a101;
   color: white;
 }
@@ -143,7 +143,7 @@ button {
   text-decoration: none;
 }
 
-.game-header{
+.game-header {
   color: #fff;
   font-size: 60px;
   font-weight: bold;
@@ -153,7 +153,22 @@ button {
   border-radius: 10px;
 }
 
-.game-titles{
+.game-titles {
   margin-top: 15px;
   font-size: 30px;
+}
+
+.question-box {
+  background-color: #f9891983;
+  height: 300px;
+  width: 480px;
+  margin: 60px auto 0;
+}
+
+.copyright {
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-weight: bolder;
 }
