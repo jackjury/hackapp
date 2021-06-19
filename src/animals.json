@@ -1,18 +1,18 @@
 [
   {
-    "name": "apple",
-    "answers": ["apple", "carrot", "dog", "car"]
+    "name": "dog",
+    "answers": ["dog", "frog", "table", "lamp"]
   },
   {
-    "name": "banana",
-    "answers": ["banana", "spade", "ghost", "ball"]
+    "name": "cat",
+    "answers": ["cat", "bear", "cow", "mouse"]
   },
   {
-    "name": "orange",
-    "answers": ["orange", "camera", "oven", "cup"]
+    "name": "elephant",
+    "answers": ["elephant", "egg", "apple", "hat"]
   },
   {
-    "name": "strawberry",
-    "answers": ["strawberry", "sausage", "hat", "fox"]
+    "name": "sheep",
+    "answers": ["sheep", "sun", "spoon", "lobster"]
   }
 ]
