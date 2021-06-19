@@ -2,18 +2,17 @@
   {
     "name": "dog",
     "answers": ["dog", "frog", "table", "lamp"]
-    "url"
   },
   {
     "name": "cat",
     "answers": ["cat", "bear", "cow", "mouse"]
   },
   {
-    "name": "elephant",
-    "answers": ["elephant", "egg", "apple", "hat"]
+    "name": "lion",
+    "answers": ["lion", "egg", "apple", "hat"]
   },
   {
-    "name": "sheep",
-    "answers": ["sheep", "sun", "spoon", "lobster"]
+    "name": "penguin",
+    "answers": ["penguin", "sun", "spoon", "lobster"]
   }
 ]

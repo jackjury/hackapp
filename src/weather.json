@@ -1,0 +1,18 @@
+[
+  {
+    "name": "cloud",
+    "answers": ["cloud", "storm", "wind", "sun"]
+  },
+  {
+    "name": "rain",
+    "answers": ["rain", "rainbow", "sun", "wind"]
+  },
+  {
+    "name": "lightning",
+    "answers": ["lightning", "sun", "rainbow", "cloud"]
+  },
+  {
+    "name": "rainbow",
+    "answers": ["rainbow", "cloud", "storm", "wind"]
+  }
+]
