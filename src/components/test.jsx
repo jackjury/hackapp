@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Answers from "./answers";
+import Answers from "./Answers";
 
 class Test extends Component {
   state = {};
