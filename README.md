@@ -26,6 +26,8 @@ Create a presentation to showcase your product
 Localisation - Pulls from JSON file, can be swapped out.
 
 Design - Aaron and Jack
+Figma design
+https://www.figma.com/file/9YrtPqgcima7tkZLVJ8UDi/Cub-Club---Team-Lions?node-id=0%3A1
 
 Greensock - Took Long to implement
 
