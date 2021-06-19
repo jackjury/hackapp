@@ -1,11 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-
-import Error from "./components/error";
-import WelcomeScreen from "./components/welcomeScreen";
-import ImageGameHomePage from "./components/imageGame";
-import Main from "./components/main";
+import Error from "./components/Error";
+import WelcomeScreen from "./components/WelcomeScreen";
+import ImageGameHomePage from "./components/ImageGameHomePage";
+import Main from "./components/Main";
 
 function App() {
   return (
