@@ -17,7 +17,7 @@ body {
   background-color: #f2d355;
 }
 
-.welcome-button {
+.welcome-button, .error-button {
   width: 400px;
   height: 100px;
   margin: 10px;
@@ -30,13 +30,13 @@ body {
 }
 
 .welcome-button:hover,
-.back-button:hover {
+.back-button:hover, .error-button:hover {
   background-color: #60a101;
   color: white;
 }
 
 .welcome-button a,
-.back-button a {
+.back-button a, .error-button a{
   color: white;
   text-decoration: none;
 }
@@ -84,4 +84,9 @@ body {
   height: auto;
   position: relative;
   top: -11px;
+}
+
+
+.error-text{
+  color: #fff;
 }

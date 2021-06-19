@@ -8,8 +8,8 @@ class Error extends Component {
     return (
       <div>
         <img src={lion} alt="Lion" />
-        <h1>Oh no! You've gone off the path. Let's go back home.</h1>
-        <button><Link to="/"> Home </Link></button>
+        <h1 className="error-text">Oh no! You've gone off the path. Let's go back home.</h1>
+        <button className="error-button"><Link to="/"> Home </Link></button>
       </div>
     );
   }

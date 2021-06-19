@@ -7,7 +7,7 @@ class WelcomeScreen extends Component {
   render() {
     return (
       <div>
-        <h1 className="typewriter">Welcome to</h1>
+        {/* <h1 className="typewriter">Welcome to</h1> */}
         <img src={cubClub} alt="Welcome" />
         <button className="welcome-button">
           <Link to="/image-game">Lets Start!</Link>
