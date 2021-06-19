@@ -10,8 +10,6 @@ import Fruit from "./components/fruit";
 import Animal from "./components/animals";
 import Weather from "./components/weather";
 
-// import Music from "./components/Music";
-
 function App() {
   return (
     <div className="App">
@@ -30,7 +28,6 @@ function App() {
           <Redirect to="/error" />
         </Switch>
       </BrowserRouter>
-      {/* <Music /> */}
     </div>
   );
 }
