@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/image-game" component={ImageGameHomePage} />
           <Route exact path="/error" component={Error} />
           <Route exact path="/image-game/fruit" component={Fruit} />
-          <Redirect to="/" />
+          <Redirect to="/error" />
         </Switch>
       </BrowserRouter>
     </div>
