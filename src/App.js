@@ -1,11 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-
-import Error from "./components/error";
-import WelcomeScreen from "./components/welcomeScreen";
-import ImageGameHomePage from "./components/imageGame";
+import Error from "./components/Error";
+import WelcomeScreen from "./components/WelcomeScreen";
+import ImageGameHomePage from "./components/ImageGameHomePage";
 import Header from "./components/Header";
+import Test from "./components/Test";
+import Fruit from "./components/Fruit";
 
 function App() {
   return (
@@ -14,10 +15,12 @@ function App() {
         <Route path="/image-game" component={Header} />
 
         <Switch>
+          <Route exact path="/jackstest" component={Test} />
           <Route exact path="/" component={WelcomeScreen} />
           <Route exact path="/image-game" component={ImageGameHomePage} />
           <Route exact path="/error" component={Error} />
-          <Redirect to="/" />
+          <Route exact path="/image-game/fruit" component={Fruit} />
+          <Redirect to="/error" />
         </Switch>
       </BrowserRouter>
     </div>

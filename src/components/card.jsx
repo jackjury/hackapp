@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Img from "./img";
-import Answers from "./answers";
+import Img from "./Img";
+import Answers from "./Answers";
 
 class card extends Component {
   state = {};
