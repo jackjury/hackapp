@@ -1,20 +1,24 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+
 import Error from "./components/error";
-import HomePage from "./components/home";
-import ImageGameHomePage from "./components/image-game";
+import WelcomeScreen from "./components/welcomeScreen";
+import ImageGameHomePage from "./components/imageGame";
 import Main from "./components/main";
 
 function App() {
   return (
     <div className="App">
-      <Main />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/image-game" component={ImageGameHomePage} />
-        <Route exact path="/error" component={Error} />
-        <Redirect to="/" />
-      </Switch>
+      <BrowserRouter>
+        <Main />
+        <Switch>
+          <Route exact path="/" component={WelcomeScreen} />
+          <Route exact path="/image-game" component={ImageGameHomePage} />
+          <Route exact path="/error" component={Error} />
+          <Redirect to="/" />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
