@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 import AppleImage from "../images/fruit/apple.png";
 import BlueImage from "../images/colours/blue.png";
 import PandaImage from "../images/animal/panda.png";
@@ -9,29 +11,34 @@ class ImageGameHomePage extends Component {
   render() {
     return (
       <div>
-        <p>Image Game Home Page!</p>
-        <hr />
-        <div className="gameChoiceContainer">
-          <div className="fruitGameChoice">
-            <p>Fruit</p>
-            <img height="200px" src={AppleImage} alt="" />
+        <p>Choose Your Game!</p>
+        <div className="gameChoiceContainerFirst">
+          <div className="gameChoice">
+            <Link to="/image-game/fruit">
+              <p>Fruit</p>
+              <img height="200px" src={AppleImage} alt="" />
+            </Link>
           </div>
-          <hr />
-          <div className="colourGameChoice">
-            <p>Colours</p>
-            <img height="200px" src={BlueImage} alt="" />
+          <div className="gameChoice">
+            <Link to="/image-game/colours">
+              <p>Colours</p>
+              <img height="200px" src={BlueImage} alt="" />
+            </Link>
           </div>
-          <hr />
-          <div className="animalGameChoice">
-            <p>Animals</p>
-            <img height="200px" src={PandaImage} alt="" />
+        </div>
+        <div className="gameChoiceContainerSecond">
+          <div className="gameChoice">
+            <Link to="/image-game/animals">
+              <p>Animals</p>
+              <img height="200px" src={PandaImage} alt="" />
+            </Link>
           </div>
-          <hr />
-          <div className="weatherGameChoice">
-            <p>Weather</p>
-            <img height="200px" src={CloudImage} alt="" />
+          <div className="gameChoice">
+            <Link to="/image-game/weather">
+              <p>Weather</p>
+              <img height="200px" src={CloudImage} alt="" />
+            </Link>
           </div>
-          <hr />
         </div>
       </div>
     );
