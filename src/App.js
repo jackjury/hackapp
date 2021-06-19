@@ -6,16 +6,9 @@ import Error from "./components/Error";
 import WelcomeScreen from "./components/WelcomeScreen";
 import ImageGameHomePage from "./components/ImageGameHomePage";
 import Main from "./components/Main";
-=======
+import Test from "./components/Test";
+import Fruit from "./components/Fruit";
 
-import Error from "./components/error";
-import WelcomeScreen from "./components/welcomeScreen";
-import ImageGameHomePage from "./components/imageGame";
-import Main from "./components/main";
-import Test from "./components/test";
-
-import Fruit from "./components/fruit";
->>>>>>> f65ec7e364f523c2b2ade3a2b38559e91497200f
 
 function App() {
   return (
