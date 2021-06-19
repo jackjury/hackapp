@@ -2,21 +2,19 @@ import React, { Component } from "react";
 import Answers from "./answers";
 import SuccessPage from "./successPage";
 import Game from '../colours.json'
-
 class Colours extends Component {
   try = (boolean) => {
     if (boolean) {
       this.increaseTurn();
     } else {
-      alert("Wrong!");
+      alert('Uh-oh! Try again');
     }
   };
 
   increaseTurn = () => {
-    console.log("button press");
+    console.log('button press');
     console.log(this.state.turn);
     console.log(this.state.game.length);
-
     this.setState({ turn: this.state.turn + 1 });
   };
 
@@ -31,7 +29,7 @@ class Colours extends Component {
       return <SuccessPage />;
     } else {
       return (
-        <>
+        <div className="question-box">
           <img
             height="200px"
             src={this.state.game[this.state.turn].image}
@@ -42,7 +40,7 @@ class Colours extends Component {
             try={this.try}
             answer={this.state.game[this.state.turn].answers}
           />
-        </>
+        </div>
       );
     }
   }

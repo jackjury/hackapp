@@ -8,12 +8,12 @@ class Fruit extends Component {
     if (boolean) {
       this.increaseTurn();
     } else {
-      alert("Wrong!");
+      alert('Uh-oh! Try again');
     }
   };
 
   increaseTurn = () => {
-    console.log("button press");
+    console.log('button press');
     console.log(this.state.turn);
     console.log(this.state.game.length);
 

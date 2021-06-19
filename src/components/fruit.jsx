@@ -8,7 +8,7 @@ class Fruit extends Component {
     if (boolean) {
       this.increaseTurn();
     } else {
-      alert("Wrong!");
+      alert('Uh-oh! Try again');
     }
   };
 
