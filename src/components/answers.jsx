@@ -24,7 +24,12 @@ class AnswerButtons extends Component {
       <div className="container">
         {arr.map((item) => {
           return (
-            <button onClick={() => this.props.try(item[1])}>{item[0]}</button>
+            <button
+              className="btn btn-primary"
+              onClick={() => this.props.try(item[1])}
+            >
+              {item[0]}
+            </button>
           );
         })}
       </div>
