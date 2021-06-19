@@ -9,6 +9,7 @@ import Test from "./components/test";
 import Fruit from "./components/fruit";
 import Animal from "./components/animals";
 import Weather from "./components/weather";
+import Colours from "./components/colours";
 
 // import Music from "./components/Music";
 
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/image-game/fruit" component={Fruit} />
           <Route exact path="/image-game/animals" component={Animal} />
           <Route exact path="/image-game/weather" component={Weather} />
+          <Route exact path="/image-game/colours" component={Colours} />
 
           <Redirect to="/error" />
         </Switch>
