@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import Answers from "./answers";
-import DogImage from "../images/animal/dog.png";
-import CatImage from "../images/animal/cat.png";
-import LionImage from "../images/animal/lion.png";
-import PenguinImage from "../images/animal/penguin.png";
-
+import Game from '../animals.json';
 import SuccessPage from "./successPage";
 
 class Fruit extends Component {
@@ -26,28 +22,7 @@ class Fruit extends Component {
 
   state = {
     turn: 0,
-    game: [
-      {
-        name: "dog",
-        answers: ["dog", "frog", "table", "lamp"],
-        image: DogImage,
-      },
-      {
-        name: "cat",
-        answers: ["cat", "bear", "cow", "mouse"],
-        image: CatImage,
-      },
-      {
-        name: "lion",
-        answers: ["lion", "egg", "apple", "hat"],
-        image: LionImage,
-      },
-      {
-        name: "penguin",
-        answers: ["penguin", "sun", "spoon", "lobster"],
-        image: PenguinImage,
-      },
-    ],
+    game: Game
   };
   render() {
     if (this.state.turn + 1 > this.state.game.length) {
@@ -56,19 +31,19 @@ class Fruit extends Component {
       return <SuccessPage />;
     } else {
       return (
-        <>
-          <img
-            height="200px"
-            src={this.state.game[this.state.turn].image}
-            alt="apple"
-          />
+				<>
+					<img
+						height='200px'
+						src={this.state.game[this.state.turn].image}
+						alt={this.state.game.name}
+					/>
 
-          <Answers
-            try={this.try}
-            answer={this.state.game[this.state.turn].answers}
-          />
-        </>
-      );
+					<Answers
+						try={this.try}
+						answer={this.state.game[this.state.turn].answers}
+					/>
+				</>
+			);
     }
   }
 }

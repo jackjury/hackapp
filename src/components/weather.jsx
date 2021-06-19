@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import Answers from "./answers";
-import CloudImage from "../images/weather/cloud.png";
-import LightningImage from "../images/weather/lightning.png";
-import RainImage from "../images/weather/rain.png";
-import RainbowImage from "../images/weather/rainbow.png";
 import SuccessPage from "./successPage";
+import Game from "../weather.json"
 
 class Weather extends Component {
   try = (boolean) => {
@@ -25,28 +22,7 @@ class Weather extends Component {
 
   state = {
     turn: 0,
-    game: [
-      {
-        name: "cloud",
-        answers: ["cloud", "car", "country", "wall"],
-        image: CloudImage,
-      },
-      {
-        name: "lightning",
-        answers: ["lightning", "phone", "map", "bike"],
-        image: LightningImage,
-      },
-      {
-        name: "rain",
-        answers: ["rain", "cheese", "bath", "teapot"],
-        image: RainImage,
-      },
-      {
-        name: "rainbow",
-        answers: ["rainbow", "plate", "computer", "music"],
-        image: RainbowImage,
-      },
-    ],
+    game: Game
   };
   render() {
     if (this.state.turn + 1 > this.state.game.length) {
@@ -55,19 +31,19 @@ class Weather extends Component {
       return <SuccessPage />;
     } else {
       return (
-        <>
-          <img
-            height="200px"
-            src={this.state.game[this.state.turn].image}
-            alt="cloud"
-          />
+				<>
+					<img
+						height='200px'
+						src={this.state.game[this.state.turn].image}
+						alt={this.state.game.name}
+					/>
 
-          <Answers
-            try={this.try}
-            answer={this.state.game[this.state.turn].answers}
-          />
-        </>
-      );
+					<Answers
+						try={this.try}
+						answer={this.state.game[this.state.turn].answers}
+					/>
+				</>
+			);
     }
   }
 }

@@ -1,18 +1,22 @@
 [
   {
     "name": "dog",
-    "answers": ["dog", "frog", "table", "lamp"]
+    "answers": ["dog", "frog", "table", "lamp"],
+    "image" : "https://images.cubclub.club/animal/dog.png"   
   },
   {
     "name": "cat",
-    "answers": ["cat", "bear", "cow", "mouse"]
+    "answers": ["cat", "bear", "cow", "mouse"],
+    "image" : "https://images.cubclub.club/animal/cat.png"
   },
   {
     "name": "lion",
-    "answers": ["lion", "egg", "apple", "hat"]
+    "answers": ["lion", "egg", "apple", "hat"],
+    "image" : "https://images.cubclub.club/animal/lion.png"
   },
   {
     "name": "penguin",
-    "answers": ["penguin", "sun", "spoon", "lobster"]
+    "answers": ["penguin", "sun", "spoon", "lobster"],
+    "image" : "https://images.cubclub.club/animal/penguin.png"
   }
 ]

@@ -1,18 +1,22 @@
 [
   {
     "name": "apple",
-    "answers": ["apple", "carrot", "dog", "car"]
+    "answers": ["apple", "carrot", "dog", "car"],
+    "image" : "https://images.cubclub.club/fruit/apple.png"
   },
   {
     "name": "banana",
-    "answers": ["banana", "spade", "ghost", "ball"]
+    "answers": ["banana", "spade", "ghost", "ball"],
+    "image" : "https://images.cubclub.club/fruit/banana.png"
   },
   {
     "name": "cherry",
-    "answers": ["cherry", "camera", "oven", "cup"]
+    "answers": ["cherry", "camera", "oven", "cup"],
+    "image" : "https://images.cubclub.club/fruit/cherry.png"
   },
   {
     "name": "strawberry",
-    "answers": ["strawberry", "sausage", "hat", "fox"]
+    "answers": ["strawberry", "sausage", "hat", "fox"],
+    "image" : "https://images.cubclub.club/fruit/strawberry.png"
   }
 ]

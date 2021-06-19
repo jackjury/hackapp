@@ -1,18 +1,22 @@
 [
   {
     "name": "cloud",
-    "answers": ["cloud", "storm", "wind", "sun"]
+    "answers": ["cloud", "storm", "wind", "sun"],
+    "image" : "https://images.cubclub.club/weather/cloud.png"
   },
   {
     "name": "rain",
-    "answers": ["rain", "rainbow", "sun", "wind"]
+    "answers": ["rain", "rainbow", "sun", "wind"],
+    "image" : "https://images.cubclub.club/weather/rain.png"
   },
   {
     "name": "lightning",
-    "answers": ["lightning", "sun", "rainbow", "cloud"]
+    "answers": ["lightning", "sun", "rainbow", "cloud"],
+    "image" : "https://images.cubclub.club/weather/lightning.png"
   },
   {
     "name": "rainbow",
-    "answers": ["rainbow", "cloud", "storm", "wind"]
+    "answers": ["rainbow", "cloud", "storm", "wind"],
+    "image" : "https://images.cubclub.club/weather/rainbow.png"
   }
 ]

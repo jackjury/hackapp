@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import Answers from "./answers";
-import AppleImage from "../images/fruit/apple.png";
-import BananaImage from "../images/fruit/banana.png";
-import CherryImage from "../images/fruit/cherry.png";
-import StrawberryImage from "../images/fruit/strawberry.png";
 import SuccessPage from "./successPage";
+import Game from "../fruit.json"
 
 class Fruit extends Component {
   try = (boolean) => {
@@ -25,28 +22,7 @@ class Fruit extends Component {
 
   state = {
     turn: 0,
-    game: [
-      {
-        name: "apple",
-        answers: ["apple", "carrot", "dog", "car"],
-        image: AppleImage,
-      },
-      {
-        name: "banana",
-        answers: ["banana", "spade", "ghost", "ball"],
-        image: BananaImage,
-      },
-      {
-        name: "cherry",
-        answers: ["cherry", "camera", "oven", "cup"],
-        image: CherryImage,
-      },
-      {
-        name: "strawberry",
-        answers: ["strawberry", "sausage", "hat", "fox"],
-        image: StrawberryImage,
-      },
-    ],
+    game: Game
   };
   render() {
     if (this.state.turn + 1 > this.state.game.length) {
@@ -55,19 +31,19 @@ class Fruit extends Component {
       return <SuccessPage />;
     } else {
       return (
-        <div className="question-box">
-          <img
-            height="200px"
-            src={this.state.game[this.state.turn].image}
-            alt="apple"
-          />
+				<div className='question-box'>
+					<img
+						height='200px'
+						src={this.state.game[this.state.turn].image}
+						alt={this.state.game.name}
+					/>
 
-          <Answers
-            try={this.try}
-            answer={this.state.game[this.state.turn].answers}
-          />
-        </div>
-      );
+					<Answers
+						try={this.try}
+						answer={this.state.game[this.state.turn].answers}
+					/>
+				</div>
+			);
     }
   }
 }

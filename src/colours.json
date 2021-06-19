@@ -1,18 +1,22 @@
 [
   {
     "name": "blue",
-    "answers": ["blue", "orange", "red", "pink"]
+    "answers": ["blue", "orange", "red", "pink"],
+    "image" : "https://images.cubclub.club/colours/blue.png"
   },
   {
     "name": "green",
-    "answers": ["green", "white", "black", "blue"]
+    "answers": ["green", "white", "black", "blue"],
+    "image" : "https://images.cubclub.club/colours/green.png"
   },
   {
     "name": "orange",
-    "answers": ["orange", "yellow", "brown", "red"]
+    "answers": ["orange", "yellow", "brown", "red"],
+    "image" : "https://images.cubclub.club/colours/orange.png"
   },
   {
     "name": "red",
-    "answers": ["red", "brown", "purple", "grey"]
+    "answers": ["red", "brown", "purple", "grey"],
+    "image" : "https://images.cubclub.club/colours/red.png"
   }
 ]
