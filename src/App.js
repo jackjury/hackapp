@@ -1,14 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-<<<<<<< HEAD
 import Error from "./components/Error";
 import WelcomeScreen from "./components/WelcomeScreen";
 import ImageGameHomePage from "./components/ImageGameHomePage";
 import Main from "./components/Main";
 import Test from "./components/Test";
 import Fruit from "./components/Fruit";
-
 
 function App() {
   return (

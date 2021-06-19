@@ -1,9 +1,35 @@
 import React, { Component } from "react";
+import Answers from "./answers";
 
 class Fruit extends Component {
-  state = {};
+  state = {
+    turn: 0,
+    game: [
+      {
+        name: "apple",
+        answers: ["apple", "carrot", "dog", "car"],
+      },
+      {
+        name: "banana",
+        answers: ["banana", "spade", "ghost", "ball"],
+      },
+      {
+        name: "cherry",
+        answers: ["cherry", "camera", "oven", "cup"],
+      },
+      {
+        name: "strawberry",
+        answers: ["strawberry", "sausage", "hat", "fox"],
+      },
+    ],
+  };
   render() {
-    return <h2>Fruit Game</h2>;
+    return (
+      <>
+        <img src="../images/fruit/apple.png" alt="apple" />
+        <Answers data={["apple", "carrot", "dog", "car"]} />
+      </>
+    );
   }
 }
 
