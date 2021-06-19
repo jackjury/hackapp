@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Error from "./components/error";
-import WelcomeScreen from "./components/WelcomeScreen";
+import WelcomeScreen from "./components/welcomeScreen";
 import ImageGameHomePage from "./components/ImageGameHomePage";
 import Header from "./components/Header";
 import Test from "./components/test";
