@@ -62,7 +62,7 @@ button {
 .error-button {
   width: 90vw;
   max-width: 400px;
-  height: 100px;
+  height: fit-content;
   margin: 10px;
   border-radius: 10px;
   background-color: #f98a19;
