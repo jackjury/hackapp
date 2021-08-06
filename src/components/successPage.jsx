@@ -13,7 +13,7 @@ class SuccessPage extends Component {
         </div>
 
         <Link to="/image-game">
-          <button className="welcome-button">Try another one!</button>
+          <button className="welcome-button">Try another!</button>
         </Link>
       </div>
     );
