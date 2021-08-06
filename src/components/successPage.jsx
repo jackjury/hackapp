@@ -12,9 +12,9 @@ class SuccessPage extends Component {
           <h1>Great Job!</h1>
         </div>
 
-        <button className="welcome-button">
-          <Link to="/image-game">Try another one!</Link>
-        </button>
+        <Link to="/image-game">
+          <button className="welcome-button">Try another one!</button>
+        </Link>
       </div>
     );
   }

@@ -8,12 +8,9 @@ class Header extends Component {
     return (
       <div className="header">
         <img className="cub-logo" src={CubClubLogo} alt="Cub Club Logo" />
-        <button className="back-button">
-          <Link to="/">Home</Link>
-        </button>
-        {/* <button className="back-button">
-          <Link to="/image-game">Game Start</Link>
-        </button> */}
+        <Link to="/">
+          <button className="back-button">Home</button>
+        </Link>
       </div>
     );
   }

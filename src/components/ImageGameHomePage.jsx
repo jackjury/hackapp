@@ -10,35 +10,35 @@ class ImageGameHomePage extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div className="imageGameHomePage">
         <h1 className="game-header">Choose Your Game!</h1>
         <div className="gameChoiceContainerFirst">
-          <div className="gameChoice">
-            <Link to="/image-game/fruit">
+          <Link to="/image-game/fruit">
+            <div className="gameChoice">
               <p className="game-titles">Fruit</p>
               <img height="200px" src={AppleImage} alt="" />
-            </Link>
-          </div>
-          <div className="gameChoice">
-            <Link to="/image-game/colours">
+            </div>
+          </Link>
+          <Link to="/image-game/colours">
+            <div className="gameChoice">
               <p className="game-titles">Colours</p>
               <img height="200px" src={BlueImage} alt="" />
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
         <div className="gameChoiceContainerSecond">
-          <div className="gameChoice">
-            <Link to="/image-game/animals">
+          <Link to="/image-game/animals">
+            <div className="gameChoice">
               <p className="game-titles">Animals</p>
               <img height="200px" src={PandaImage} alt="" />
-            </Link>
-          </div>
-          <div className="gameChoice">
-            <Link to="/image-game/weather">
+            </div>
+          </Link>
+          <Link to="/image-game/weather">
+            <div className="gameChoice">
               <p className="game-titles">Weather</p>
               <img height="200px" src={CloudImage} alt="" />
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     );
