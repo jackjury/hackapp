@@ -9,10 +9,9 @@ class WelcomeScreen extends Component {
       <div>
         {/* <h1 className="typewriter">Welcome to</h1> */}
         <img className="bigWelcomeImage" src={cubClub} alt="Welcome" />
-        <button className="welcome-button">
-          <Link to="/image-game">Lets Start!</Link>
-        </button>
-        <p className="copyright">Copyright Lions Inc. 2021</p>
+        <Link to="/image-game">
+          <button className="welcome-button">Lets Start!</button>
+        </Link>
       </div>
     );
   }

@@ -6,9 +6,12 @@ class SuccessPage extends Component {
   render() {
     return (
       <div>
-        <h1>WOW!</h1>
-        <h1>You Did it!</h1>
-        <h1>Great Job!</h1>
+        <div className="successText">
+          <h1>WOW!</h1>
+          <h1>You Did it!</h1>
+          <h1>Great Job!</h1>
+        </div>
+
         <button className="welcome-button">
           <Link to="/image-game">Try another one!</Link>
         </button>

@@ -30,7 +30,6 @@ h1 {
   text-shadow: 2px 2px black;
 }
 
-.gameChoice,
 .buttonContainer,
 button {
   margin: 1rem;
@@ -40,7 +39,10 @@ button {
 .gameChoiceContainerSecond {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  /* margin: 1rem; */
+}
+.gameChoiceContainerSecond {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 700px) {
@@ -50,16 +52,15 @@ button {
     align-items: center;
     justify-content: space-evenly;
   }
-
-  /* .bigWelcomeImage {
-    width: 90vw !important;
-    height: auto !important;
-  } */
+  .gameChoice {
+    margin: 10px;
+  }
 }
 
 .welcome-button,
 .error-button {
-  width: 400px;
+  width: 90vw;
+  max-width: 400px;
   height: 100px;
   margin: 10px;
   border-radius: 10px;
@@ -68,6 +69,7 @@ button {
   font-size: 40px;
   font-weight: bold;
   transition-duration: 0.4s;
+  color: #fff;
 }
 
 .welcome-button:hover,
@@ -77,12 +79,12 @@ button {
   color: white;
 }
 
-.welcome-button a,
+/* .welcome-button a,
 .back-button a,
 .error-button a {
   color: white;
   text-decoration: none;
-}
+} */
 
 .back-button {
   width: 150px;
@@ -94,6 +96,7 @@ button {
   font-size: 25px;
   font-weight: bold;
   transition-duration: 0.4s;
+  color: white;
 }
 
 .typewriter {
@@ -133,8 +136,15 @@ button {
   color: #fff;
 }
 .bigWelcomeImage {
-  width: auto;
-  height: 80vh;
+  width: 99vw;
+  max-width: 650px;
+  height: auto;
+}
+
+.imageGameHomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gameChoice {
@@ -142,6 +152,8 @@ button {
   width: 350px;
   height: 300px;
   border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .gameChoice:hover {
@@ -157,30 +169,37 @@ button {
 
 .game-header {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   background-color: #f9891983;
-  width: 66%;
-  margin: 0 auto;
+  width: fit-content;
+  max-width: 90vw;
+  text-align: center;
+  margin: 10px;
+  padding: 10px 25px;
   border-radius: 10px;
 }
 
 .game-titles {
   margin-top: 15px;
   font-size: 30px;
+  font-weight: 600;
 }
 
 .question-box {
   background-color: #f9891983;
-  height: 300px;
-  width: 480px;
-  margin: 60px auto 0;
+  height: fit-content;
+  width: 95vw;
+  max-width: 450px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
-.copyright {
-  color: #fff;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  font-weight: bolder;
+.successText {
+  background-color: #f9891983;
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px;
 }
