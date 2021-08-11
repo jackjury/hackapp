@@ -1,13 +1,18 @@
 # Lions Hackathon!
 
+Our app is located at: [http://www.cubclub.club](http://www.cubclub.club)
+
 ## The Problem
+
+Each year 640,000 babies are born in the UK. Worldwide it's 140m meaning every year, that's how many children start the process of learning to read.📚 Anyone who has ever taught anyone to learn to read will understand the challenge of starting the literacy journey!
 
 ## The Goal
 
-Create a web app to make learing to read interactive and Fun.
-Create a presentation to showcase your product
+The teams were tasked with creating a web app to make learning interactive and fun. They could take any technical approach they wanted and had to present their creative solution to the judges by 5pm that same day.
 
 ## The Rules
+
+None! We were instructed to use anything we could to make a fun interactive app. 
 
 ## The Plan
 
@@ -29,11 +34,11 @@ Design - Aaron and Jack
 Figma design
 https://www.figma.com/file/9YrtPqgcima7tkZLVJ8UDi/Cub-Club---Team-Lions?node-id=0%3A1
 
-Greensock - Took Long to implement
+Greensock - A pipedream, but it took too long to implement
 
-Shuffle array - stolen from stack overflow
+Shuffle array - procured from stack overflow
 
-Deploy -
+Deployment -
 Netflify drop for images - trick
 \_redirects for main site
 
